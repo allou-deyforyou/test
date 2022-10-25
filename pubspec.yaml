@@ -1,0 +1,67 @@
+name: yola
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  
+  cupertino_icons:
+  flutter:
+    sdk: flutter
+  
+  # Assets
+  flutter_localizations:
+    sdk: flutter
+  go_router:
+  intl:
+
+  # Widgets
+  modal_bottom_sheet:
+  equatable:
+
+  # Location and Geocoding
+  location:
+  maplibre_gl:
+      git:
+        url: https://github.com/m0nac0/flutter-maplibre-gl.git
+        ref: main
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_gen_runner:
+  flutter_lints:
+  build_runner:
+
+flutter_gen:
+  output: lib/screen/widget/custom/
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/
+    - assets/files/
+
+  fonts:
+    - family: FiraGO
+      fonts:
+        - asset: assets/fonts/FiraGO/FiraGO-Thin.ttf
+        - asset: assets/fonts/FiraGO/FiraGO-Two.ttf
+        - asset: assets/fonts/FiraGO/FiraGO-Eight.ttf
+        - asset: assets/fonts/FiraGO/FiraGO-SemiBold.ttf
+        - asset: assets/fonts/FiraGO/FiraGO-Regular.ttf
+        - asset: assets/fonts/FiraGO/FiraGO-Medium.ttf
+        - asset: assets/fonts/FiraGO/FiraGO-Light.ttf
+        - asset: assets/fonts/FiraGO/FiraGO-Four.ttf
+        - asset: assets/fonts/FiraGO/FiraGO-Hair.ttf
+        - asset: assets/fonts/FiraGO/FiraGO-ExtraLight.ttf
+        - asset: assets/fonts/FiraGO/FiraGO-UltraLight.ttf
+        - asset: assets/fonts/FiraGO/FiraGO-ExtraBold.ttf
+        - asset: assets/fonts/FiraGO/FiraGO-Bold.ttf
+        - asset: assets/fonts/FiraGO/FiraGO-Book.ttf
